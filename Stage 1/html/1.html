@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Bootstrap CSS --> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link href="web-fonts-with-css/css/fontawesome-all.min.css" rel="stylesheet">
+
+	<title>Customer Service Request Form</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="container">			
+			<div class="sidebar">
+				<div class="logo"><img src="img/logo.png"></div>
+				<ul>
+					<li class="active"><a href="1.html"><i class="fa fa-user"></i>&nbsp;&nbsp;&nbsp;Requester Information</a></li>
+					<li><a href="2.html"><i class="fas fa-poll-h"></i>&nbsp;&nbsp;&nbsp;Strategy</a></li>
+					<li><a href="3.html"><i class="fas fa-cloud"></i>&nbsp;&nbsp;Cloud Service Provider</a></li>
+				</ul>
+			</div>			
+			<div class="header">
+					<h2>Customer Service Request Form<a href="../index.html"><i class="fas fa-home"></i>&nbsp;Home</a></h2>					
+			</div>
+			<div class="main">
+				<div class="content">
+					<form  class="pure-form pure-form-stacked" id="Requester Information" action="">
+						<h3>Basic Information</h3>
+						<br>						
+						<fieldset>							
+							<label class="required" for="NameOrg">Name of the Organization: </label>
+							<input id="NameOrg" type="text" style="width: 98%" required/>
+						</fieldset>
+						<br>
+						<h4>Registered Office Address</h4>
+						<fieldset>	
+							<div class="pure-g">
+	            				<div class="pure-u-1">					
+									<label class="required" for="Street">Street Name</label>
+									<input id="Street" type="text" style="width: 98%" required/>
+								</div>
+								<div class="pure-u-1-2">
+									<label class="required" for="Housing" type="text">Housing/Building Number</label>
+									<input id="Housing" type="text" required/>
+								</div>
+								<div class="pure-u-1-2">
+									<label class="required" id="Landmark" type="text">Landmark</label>
+									<input for="Landmark" type="text" required/>
+								</div>
+								<div class="pure-u-1-2">
+									<label class="required" id="City" type="text">City/Town/Locality</label>
+									<input for="City" type="text" required/>
+								</div>
+								<div class="pure-u-1-2">
+									<label class="required" id="Zipcode" type="text">Zipcode</label>
+									<input for="Zipcode" type="text" pattern="[]{}" required/>											
+								</div>	
+								<div class="pure-u-1 pure-u-md-1-2">							
+									<label class="required" id="Country" type="select">Country</label>
+									 <select id="Country">
+									 	<option value="default" disabled selected hidden>--select--</option>
+									    <option value="CA">Canada</option>
+						                <option value="US">United States of America</option>
+						                <option value="GB">United Kingdom (Great Britain)</option>
+						                <option value="AU">Australia</option>
+						                <option value="JP">Japan</option>				                
+						            </select>
+						        </div>
+				        </fieldset>	
+				        <hr>
+						<fieldset>
+							<div class="pure-g">
+								<div class="pure-u-1-1">
+									<label>Website if any</label>
+									<input type="text" name="name" class="field" required pattern="[a-zA-Z0-9]+" placeholder="(optional)" style="width: 98%" />
+								</div>								
+							</div>							
+						</fieldset>
+						<br>
+						<br>
+						<h3>Contact Details</h3>
+						<br>							
+						<fieldset>
+							<h4><b>Primary Contact</b></h4>
+							<div class="pure-g">
+								<div class="pure-u-1-3">
+									<label class="required" for="Name" type="text">First Name:</label>
+									<input id="Name" type="text" required>
+								</div>
+								<div class="pure-u-1-3">
+									<label for="Name" type="text">Middle Name:</label>
+									<input id="Name" type="text" placeholder="(optional)">									
+								</div>
+								<div class="pure-u-1-3">
+									<label class="required" for="Name" type="text">Last Name:</label>
+									<input id="Name" type="text" required>									
+								</div>
+							</div>
+							<br>
+							<div class="pure-g">								
+								<div class="pure-u-3-24">
+									<label class="required" for="Gender">Gender:</label>									
+								</div>
+								<div class="pure-u-5-24">									
+									<input type="radio" name="gender" value="male"> Male<br>
+									<input type="radio" name="gender" value="female"> Female<br>
+									<input type="radio" name="gender" value="other"> Other									
+								</div>	
+								<div class="pure-u-16-24">
+									<div class="pure-g">
+										<div class="pure-u-1-1">
+											<label class="required" for="telNo">Phone number:</label>										
+										</div>
+										<div class="pure-u-3-24">
+											<select id="data-countryCode">
+												<option value="default" disabled selected hidden>--select--</option>
+												<option value="IN"> (+91)</option>
+												<option value="DE"> (+49)</option>
+												<option value="US"> (+1)</option>																				
+											</select>												
+										</div>
+										<div class="pure-u-21-24">
+											<input id="telNo" name="telNo" type="tel" style="width: 97%" required>
+										</div>										
+									</div>																											
+								</div>
+							</div>
+							<br>																				
+						</fieldset>										
+						<br>
+						<fieldset>
+							<h4><b>Secondary Contact</b></h4>
+							<div class="pure-g">
+								<div class="pure-u-1-3">
+									<label for="Name" type="text">First Name:</label>
+									<input id="Name" type="text">
+								</div>
+								<div class="pure-u-1-3">
+									<label for="Name" type="text">Middle Name:</label>
+									<input id="Name" type="text" placeholder="(optional)">									
+								</div>
+								<div class="pure-u-1-3">
+									<label for="Name" type="text">Last Name:</label>
+									<input id="Name" type="text">									
+								</div>
+							</div>
+							<br>
+							<div class="pure-g">								
+								<div class="pure-u-3-24">
+									<label for="Gender">Gender:</label>									
+								</div>
+								<div class="pure-u-5-24">									
+									<input type="radio" name="gender" value="male"> Male<br>
+									<input type="radio" name="gender" value="female"> Female<br>
+									<input type="radio" name="gender" value="other"> Other									
+								</div>	
+								<div class="pure-u-16-24">
+									<div class="pure-g">
+										<div class="pure-u-1-1">
+											<label for="telNo">Phone number:</label>										
+										</div>
+										<div class="pure-u-3-24">
+											<select id="data-countryCode">
+												<option value="default" disabled selected hidden>--select--</option>
+												<option value="IN"> (+91)</option>
+												<option value="DE"> (+49)</option>
+												<option value="US"> (+1)</option>																				
+											</select>												
+										</div>
+										<div class="pure-u-21-24">
+											<input id="telNo" name="telNo" type="tel" style="width: 97%">
+										</div>										
+									</div>																											
+								</div>
+							</div>
+							<br>																				
+						</fieldset>							
+						<br>											
+						<hr>
+						<br>
+						<fieldset>								
+								<div class="pure-g">
+									<div class="pure-u-1-2">
+										<div class="pure-g">
+											<div class="pure-u-9-24">
+												<label class="required" for="Date" style="padding: 10px">Date of Request:</label>
+											</div>	
+											<div class="pure-u-8-24">
+												<input id="Date" type="Date" required>
+											</div>										
+										</div>																				
+									</div>	
+
+									<div class="pure-u-1-2">
+										<div class="pure-g">
+											<div class="pure-u-12-24">		
+												<label class="required" for="Date" style="padding: 10px">Tentative Expected Delivery Date:</label>
+											</div>	
+											<div class="pure-u-8-24">	
+												<input id="Date" type="Date" required>
+											</div>						
+										</div>
+										<div class="pure-g">
+											<div class="pure-u-12-24">
+
+											</div>
+											<div class="pure-u-8-24">
+												<p class="required"><b>Note:</b>Tentatative dates will be discussed in later arrange meetings.</p>
+												
+											</div>
+
+										</div>
+									</div>												
+									
+								</div>
+						</fieldset>	
+						<br>					
+						<fieldset>
+							<div class="pure-g">
+								<div class="pure-u-1-5">
+									<label class="required" for="Project">Project Name:</label>										
+								</div>
+								<div class="pure-u-4-5">
+									<input id="Project" type="text" required>
+								</div>
+							</div>
+							<br>
+							<div class="pure-g">
+								<div class="pure-u-5-24">
+									<label class="required" for="End user">Select type of End-user:</label>									
+								</div>
+								<div div class="pure-u-7-24">
+									<input type="radio" name="endUser">Global Customer<br>
+									<input type="radio" name="endUser">External Customer<br>
+									<input type="radio" name="endUser">Bosch Customer<br>
+									<input type="radio" name="endUser">RBEI / Internal Customer<br>		
+									<input type="radio" name="endUser">Others							
+								</div>	
+							</div>	
+							<br>						 		
+						</fieldset>	
+					</form>
+				</div>
+				
+				<div class="footer">
+					<a href="#" class="btn btn-info" role="button" style="margin-top: 8px; margin-left: 10px">Documentation</a>
+					<button type="button" class="btn btn-primary" style="margin-top: 8px; margin-left: 28% ">Save</button>
+					<button type="button" class="btn btn-danger" style="margin-top: 8px">Cancel</button>					
+					<a href="2.html" class="btn btn-success" role="button" style="margin-top: 8px; margin-right: 10px; float: right">Save & Next</a>
+				</div>
+				
+		</div>	
+	</div>
+	
+	
+	
+	
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+
+</body>
+<div class="copyright">
+		<!-- Copyright -->
+		<div class="footer-copyright text-center py-3"><b>© 2018 Copyright:</b>
+			<a href="https://www.bosch.in/">bosch.in</a>
+		</div>
+		<!-- Copyright -->
+</div>
+</html>
